@@ -1,21 +1,404 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Comentarios</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mi hobby</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
 
-  <h1>Comentarios</h1>
+<body class="index-page">
 
-  <form id="formulario">
-    <input type="text" id="comentario" placeholder="Escribe algo" required />
-    <button type="submit">Guardar</button>
-  </form>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  <h2>Lista de comentarios:</h2>
-  <ul id="lista-comentarios"></ul>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Mi hobby</h1>
+      </a>
 
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#portfolio">Galería</a></li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <li><a href="#contact">Sección interactiva</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">¡Bienvenido/a a mi espacio personal! <span>Mi hobby</span></h2>
+            <p class="animate__animated animate__fadeInUp">Este es un lugar donde comparto las cosas que realmente me apasionan: mis hobbies. Aquí encontrarás contenido sobre lo que disfruto hacer en mi tiempo libre, desde actividades creativas hasta momentos de aprendizaje y diversión.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer mas</a>
+          </div>
+        </div>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Acerca de</h2>
+        <p>Conoceme</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              El fútbol es mucho más que un simple deporte para mí, es una verdadera pasión que forma parte importante de mi día a día. Desde siempre me ha gustado todo lo relacionado con este deporte: la emoción de cada jugada, la estrategia detrás de cada partido y la conexión que se crea entre las personas que lo disfrutan.
+
+              En mi tiempo libre, uno de los momentos que más disfruto es salir a jugar con mis amigos. Ya sea con los del barrio o con mis compañeros de trabajo, cada partido se convierte en una oportunidad para compartir, reír, competir sanamente y liberar el estrés de la rutina. No importa si es en una cancha formal o en un espacio improvisado, lo importante es el ambiente, la energía y la pasión que todos llevamos al juego. Estos momentos no solo fortalecen la amistad, sino que también crean recuerdos que se quedan para siempre.
+
+              Además de jugar, también me apasiona seguir el fútbol profesional. Cuando se disputan los partidos de la La Liga y la Premier League,
+
+
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>
+            procuro no perderme los encuentros más importantes. Me gusta analizar cómo juegan los equipos, ver el talento de los jugadores y disfrutar de la intensidad que caracteriza a estas competiciones. Sin duda, uno de los momentos más emocionantes es cuando llegan los clásicos, partidos llenos de historia, rivalidad y adrenalina, donde cada jugada puede cambiarlo todo.
+
+            Ver estos partidos se ha convertido en una tradición personal, un espacio en el que puedo relajarme, emocionarme y vivir el fútbol desde otra perspectiva. Ya sea solo o acompañado, cada encuentro representa una experiencia única que disfruto al máximo.
+
+            En definitiva, el fútbol es una combinación perfecta entre diversión, pasión y conexión con los demás. Es una actividad que me permite mantenerme activo, compartir con personas importantes en mi vida y disfrutar de uno de los deportes más emocionantes del mundo. Para mí, el fútbol no es solo un hobby, es una forma de vivir grandes momentos tanto dentro como fuera de la cancha. </p>
+            
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Llamado a la acción</h3>
+            <p>¡Únete a la pasión por el fútbol! <br>
+
+                No te quedes solo viendo desde la pantalla. Anímate a salir, jugar un partido con tus amigos, compartir tu amor por el fútbol y vivir la emoción dentro y fuera de la cancha. <br>
+
+                  ¿Te gusta tanto como a mí? Entonces sigue explorando esta página, descubre más contenido y sé parte de esta pasión que nos une. <br>
+
+                  ¡El balón ya está en juego… ahora es tu turno!</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+   
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galería</h2>
+        <p>Mi portfolio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todo</li>
+            <li data-filter=".filter-app">Mis jugadores favoritos</li>
+            <li data-filter=".filter-product">Mis equipos</li>
+            <li data-filter=".filter-branding">Mis participaciones</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/ronaldino.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ronaldinho Gaucho</h4>
+                <p>El astro del futbol</p>
+                <a href="assets/img/masonry-portfolio/ronaldino.jpg" title="Ronaldinho Gaucho" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/Chelsea_FC.svg.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Chelsea football club</h4>
+                <p>Mantengamos la bandera azul ondeando</p>
+                <a href="assets/img/masonry-portfolio/Chelsea_FC.svg.png" title="Chelsea football club" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Concentracion del equipo</h4>
+                <!-- <p>Lorem ipsum, dolor sit</p> -->
+                <a href="assets/img/masonry-portfolio/1.jpeg" title="Concentracion del equipo" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/skysports-eden-hazard-chelsea_3918835.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Eden Hazard</h4>
+                <p>La vida pasa rapidísimo... vive el momento</p>
+                <a href="assets/img/masonry-portfolio/skysports-eden-hazard-chelsea_3918835.jpg" title="Eden Hazard" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/barca.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Barcelona fútbol club</h4>
+                <p>Mas que un club</p>
+                <a href="assets/img/masonry-portfolio/barca.jpg" title="Barcelona fútbol club" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Antes de un partido</h4>
+                <!-- <p>Lorem ipsum, dolor sit</p> -->
+                <a href="assets/img/masonry-portfolio/2.jpeg" title="Antes de un partido" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/didier-drogba.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Didier Drogba</h4>
+                <p>Creo mucho en el destino y creo que si algo no sucede, fue por una razón</p>
+                <a href="assets/img/masonry-portfolio/didier-drogba.webp" title="Didier Drogba" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/once_caldas.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Once caldas</h4>
+                <p>Campeones o nada</p>
+                <a href="assets/img/masonry-portfolio/once_caldas.jpg" title="Once caldas" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/3.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>La concentracion es primero</h4>
+                <!-- <p>Lorem ipsum, dolor sit</p> -->
+                <a href="assets/img/masonry-portfolio/3.jpeg" title="La concentracion es primero" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sección interactiva</h2>
+        <p>Comentarios</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+            <form class="php-email-form" data-aos="fade-up" data-aos-delay="200"  id="formulario" >
+              <div class="row gy-4">
+
+                <!-- <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div> -->
+
+                <div class="col-md-12">
+                  <textarea class="form-control" id="comentario"  rows="6" placeholder="Escribe tu comentario" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="sent-message">Escribe</div>
+
+                  <button type="submit">Comentar</button>
+                </div>
+
+              </div>
+              
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+              <div class="row" id="contenedor-comentarios"></div>
+
+            </div><!-- End testimonial item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Mi hobby</h3>
+      <p>Sigueme en mis redes sociales.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Mi hobby</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="app.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
